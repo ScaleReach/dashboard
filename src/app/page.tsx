@@ -16,7 +16,9 @@ function IntentRow({ intent }: { intent: Intent }) {
 			<td className="pl-0 overflow-ellipsis">{intent.id}</td>
 			<td>{intent.fullname}</td>
 			<td>John</td>
-			<td>{intent.status}</td>
+			<td>
+				<p className="rounded bg-[#ff72124f] text-center font-bold cursor-pointer">{intent.status}</p>
+			</td>
 			<td className="overflow-ellipsis">{intent.description}</td>
 			<td>{new Date(intent.time).toLocaleString("en-SG")}</td>
 			<td className="w-4">
