@@ -19,3 +19,10 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@layer components {
+  .overflow-ellipsis {
+    @apply text-ellipsis overflow-hidden whitespace-nowrap
+  }
+}
